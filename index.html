@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro</title>
+</head>
+<body>
+    <label for="language">What language was created to add interactivity to the Web?:<input class="code" type="text"></label>
+</body>
+<script>
+    alert(document.querySelector('.code'));
+    var txtCourse = document.querySelector(".code")
+    txtCourse.addEventListener('focusout',(event) => { alert(txtCourse.value) })
+    let userResponse = prompt("What library would you prefer, Vue, React or jQuery?");
+
+alert("You said"+ userResponse);
+</script>
+</html>
